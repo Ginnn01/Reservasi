@@ -93,7 +93,7 @@ $user->save();
 | Role | Email | Password |
 |---|---|---|
 | Admin | adminresto@gmail.com | resto123456 |
-| User | user@demo.com | password |
+| User | Pelanggan1@gmail.com | password123 |
 
 *(Sesuaikan tabel ini dengan akun demo yang benar-benar Anda buat di database sebelum submit.)*
 
@@ -109,7 +109,7 @@ Bagian ini akan diperbarui begitu kedua fitur selesai dibangun.
 ## Dokumentasi Screenshot
 
 ### 1. Halaman Login / Autentikasi
-*(tempel screenshot halaman login di sini)*
+   ![Halaman Login](docs/screenshots/1.png)
 
 ### 2. Verifikasi Email
 *(tempel screenshot proses verifikasi email di sini)*
