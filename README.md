@@ -115,7 +115,7 @@ Bagian ini akan diperbarui begitu kedua fitur selesai dibangun.
 *(tempel screenshot proses verifikasi email di sini)*
 
 ### 3. Dashboard
-![Halaman Dashboard] ( docs/screenshots/3.png)
+![Halaman Dashboard] ( docs/screenshoots/3.png)
 
 ### 4. CRUD
 **Kelola Meja**
