@@ -122,16 +122,18 @@ Bagian ini akan diperbarui begitu kedua fitur selesai dibangun.
 ![Kelola Meja](docs/screenshoots/meja.png)
 
 **Kelola Menu**
-![Kelola Menu](docs/screenshoots/menu.png)
+![Kelola Meja](docs/screenshoots/menu.png)
 
 **Reservasi**
-![Kelola Menu](docs/screenshoots/reservasi.png)
+![Kelola reservasi](docs/screenshoots/reservasi.png)
 
 ### 5. REST API (Postman)
 *(belum tersedia — tempel screenshot request & response Postman setelah fitur dibangun)*
 
 ### 6. Pemisahan Hak Akses Admin dan User
-*(tempel screenshot perbandingan tampilan admin vs user di sini)*
+![Halaman Admin](docs/screenshoots/admin.png)
+
+![Halaman user](docs/screenshoots/user.png)
 
 ### 7. Tampilan Responsive (Desktop & Mobile)
 **Desktop**
