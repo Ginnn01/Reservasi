@@ -109,7 +109,7 @@ Bagian ini akan diperbarui begitu kedua fitur selesai dibangun.
 ## Dokumentasi Screenshot
 
 ### 1. Halaman Login / Autentikasi
-   ![Halaman Login](docs/screenshots/1.png)
+   ![Halaman Login](docs/screenshoots/1.png)
 
 ### 2. Verifikasi Email
 *(tempel screenshot proses verifikasi email di sini)*
