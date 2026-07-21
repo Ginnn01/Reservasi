@@ -13,7 +13,20 @@ Route::get('/', function () {
 });
 
 Route::get('/dashboard', function () {
-    return view('dashboard');
+    $user = auth()->user();
+
+    $upcomingReservation = \App\Models\Reservation::with('table')
+        ->where('user_id', $user->id)
+        ->whereIn('status', ['pending', 'confirmed'])
+        ->where('reservation_date', '>=', now()->toDateString())
+        ->orderBy('reservation_date')
+        ->orderBy('start_time')
+        ->first();
+
+    $totalReservations = \App\Models\Reservation::where('user_id', $user->id)->count();
+    $completedReservations = \App\Models\Reservation::where('user_id', $user->id)->where('status', 'completed')->count();
+
+    return view('dashboard', compact('upcomingReservation', 'totalReservations', 'completedReservations'));
 })->middleware(['auth', 'verified'])->name('dashboard');
 
 Route::middleware('auth')->group(function () {

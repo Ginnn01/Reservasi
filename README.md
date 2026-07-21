@@ -92,7 +92,7 @@ $user->save();
 
 | Role | Email | Password |
 |---|---|---|
-| Admin | admin@demo.com | password |
+| Admin | adminresto@gmail.com | resto123456 |
 | User | user@demo.com | password |
 
 *(Sesuaikan tabel ini dengan akun demo yang benar-benar Anda buat di database sebelum submit.)*
