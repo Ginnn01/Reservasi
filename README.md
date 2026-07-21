@@ -119,13 +119,13 @@ Bagian ini akan diperbarui begitu kedua fitur selesai dibangun.
 
 ### 4. CRUD
 **Kelola Meja**
-*(tempel screenshot di sini)*
+![Kelola Meja](docs/screenshoots/meja.png)
 
 **Kelola Menu**
-*(tempel screenshot di sini)*
+![Kelola Menu](docs/screenshoots/menu.png)
 
 **Reservasi**
-*(tempel screenshot di sini)*
+![Kelola Menu](docs/screenshoots/reservasi.png)
 
 ### 5. REST API (Postman)
 *(belum tersedia — tempel screenshot request & response Postman setelah fitur dibangun)*
