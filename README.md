@@ -123,11 +123,11 @@ Bagian ini akan diperbarui begitu kedua fitur selesai dibangun.
 
 
 ### 3. Dashboard
-
-   ![Halaman Dashboard](docs/screenshoots/3.png)
+*Data diagram Reservasi*
+   ![Halaman Dashboard](docs/screenshoots/admindata.png)
 
 ### 4. CRUD
-**Kelola Meja**
+**Kelola Meja**s
 ![Kelola Meja](docs/screenshoots/meja.png)
 
 **Kelola Menu**
