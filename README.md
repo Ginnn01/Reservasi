@@ -142,8 +142,11 @@ Bagian ini akan diperbarui begitu kedua fitur selesai dibangun.
 
 ### 6. Pemisahan Hak Akses Admin dan User
 ![Halaman Admin](docs/screenshoots/admin.png)
+![Halaman Admin](docs/screenshoots/hakaksesadminkelolareservasi.png)
+
 
 ![Halaman user](docs/screenshoots/user.png)
+![Halaman user](docs/screenshoots/hakaksespelangganreservasi.png)
 
 ### 7. Tampilan Responsive (Desktop & Mobile)
 **Desktop**
