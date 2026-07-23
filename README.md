@@ -162,9 +162,7 @@ Bagian ini akan diperbarui begitu kedua fitur selesai dibangun.
 ![Halaman mobile](docs/screenshoots/mejamobile.png)
 
 **tampilan dashboard menu mobile**
-![Halaman mobile](docs/screenshoots/menu.png)
-
-![Halaman mobile](docs/screenshoots/mejamobile.png)
+![Halaman mobile](docs/screenshoots/menumobile.png)
 
 **tampilan dashboard reservasi mobile**
 ![Halaman mobile](docs/screenshoots/reservasimobile.png)
