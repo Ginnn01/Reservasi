@@ -142,9 +142,9 @@ Bagian ini akan diperbarui begitu kedua fitur selesai dibangun.
 
 ### 6. Pemisahan Hak Akses Admin dan User
 ![Halaman Admin](docs/screenshoots/admin.png)
-![Halaman Admin](docs/screenshoots/hakaksesadminkelolareservasi.png)
+![Halaman Admin](docs/screenshoots/hakaksesadminkeolareservasi.png)
 
-
+**Hak akses User**
 ![Halaman user](docs/screenshoots/user.png)
 ![Halaman user](docs/screenshoots/hakaksespelangganreservasi.png)
 
