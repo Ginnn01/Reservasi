@@ -112,10 +112,10 @@ Bagian ini akan diperbarui begitu kedua fitur selesai dibangun.
    ![Halaman Login ](docs/screenshoots/login.png)
 
 ### 2. Verifikasi Email
-*(Mulai dari Tampilan Regitrasi dulu)*
+(Mulai dari Tampilan Regitrasi dulu)
 ![Halaman Login ](docs/screenshoots/register.png)
 
-*(Resend Verify nya agar bisa login) *
+(Resend Verify nya agar bisa login) 
 ![Halamanverify](docs/screenshoots/resendverify.png)
 
 *(Hasil verify email nya agar bisa login dan setelah itu click tombol verify agar bisa langsung ke tampilan Dashboard nya)*
