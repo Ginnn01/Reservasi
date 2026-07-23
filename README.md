@@ -109,12 +109,20 @@ Bagian ini akan diperbarui begitu kedua fitur selesai dibangun.
 ## Dokumentasi Screenshot
 
 ### 1. Halaman Login / Autentikasi
-   ![Halaman Login](docs/screenshoots/1.png)
+   ![Halaman Login ](docs/screenshoots/login.png)
 
 ### 2. Verifikasi Email
-*(tempel screenshot proses verifikasi email di sini)*
+![Halaman Login ](docs/screenshoots/register.png)
+
+**resend verify nya agar bisa login**
+![Halamanverify](docs/screenshoots/resendverify.png)
+
+*hasil verify email nya agar bisa login dan setelah itu click tombol verify agar bisa langsung ke tampilan dashboard nya*
+![halamanverify](docs/screenshoots/hasilverify.png)
+
 
 ### 3. Dashboard
+
    ![Halaman Dashboard](docs/screenshoots/3.png)
 
 ### 4. CRUD
@@ -122,10 +130,11 @@ Bagian ini akan diperbarui begitu kedua fitur selesai dibangun.
 ![Kelola Meja](docs/screenshoots/meja.png)
 
 **Kelola Menu**
-![Kelola Meja](docs/screenshoots/menu.png)
+![Kelola Menu](docs/screenshoots/menu.png)
 
 **Reservasi**
-![Kelola reservasi](docs/screenshoots/reservasi.png)
+![Kelola reservasi](docs/screenshoots/reservasi1.png)
+![Kelola reservasi](docs/screenshoots/reservasi2.png)
 
 ### 5. REST API (Postman)
 *(belum tersedia — tempel screenshot request & response Postman setelah fitur dibangun)*
