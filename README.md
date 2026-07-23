@@ -127,7 +127,7 @@ Bagian ini akan diperbarui begitu kedua fitur selesai dibangun.
    ![Halaman Dashboard](docs/screenshoots/admindata.png)
 
 ### 4. CRUD
-**Kelola Meja**s
+**Kelola Meja**
 ![Kelola Meja](docs/screenshoots/meja.png)
 
 **Kelola Menu**
@@ -141,19 +141,33 @@ Bagian ini akan diperbarui begitu kedua fitur selesai dibangun.
 *(belum tersedia — tempel screenshot request & response Postman setelah fitur dibangun)*
 
 ### 6. Pemisahan Hak Akses Admin dan User
+**Admin bisa mengakses dan mengontrol reservasi nya**
 ![Halaman Admin](docs/screenshoots/admin.png)
 ![Halaman Admin](docs/screenshoots/hakaksesadminkeolareservasi.png)
 
+**User hanya bisa melakukan reservasi**
 **Hak akses User**
 ![Halaman user](docs/screenshoots/user.png)
 ![Halaman user](docs/screenshoots/hakaksespelangganreservasi.png)
 
 ### 7. Tampilan Responsive (Desktop & Mobile)
 **Desktop**
-*(tempel screenshot di sini)*
+![Halaman Dekstop](docs/screenshoots/admindata.png)
+
 
 **Mobile**
-*(tempel screenshot di sini)*
+![Halaman mobile](docs/screenshoots/dashboardmobile.png)
+
+**tampilan dashboard meja mobile**
+![Halaman mobile](docs/screenshoots/mejamobile.png)
+
+**tampilan dashboard menu mobile**
+![Halaman mobile](docs/screenshoots/menu.png)
+
+![Halaman mobile](docs/screenshoots/mejamobile.png)
+
+**tampilan dashboard reservasi mobile**
+![Halaman mobile](docs/screenshoots/reservasimobile.png)
 
 ### 8. Hasil Export PDF/Excel
 *(belum tersedia — tempel screenshot hasil export setelah fitur dibangun)*
