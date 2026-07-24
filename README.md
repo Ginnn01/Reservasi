@@ -184,5 +184,6 @@ Bagian ini akan diperbarui begitu kedua fitur selesai dibangun.
 **Tombol export di halaman Kelola Reservasi**
 ![Tombol Export](docs/screenshoots/export_excel.png)
 
-**Hasil export Excel **
-![Hasil Export Excel](docs/screenshoots/Hasil_export_excel.png)
+
+*(Hasil export Excel)*
+![asil Export Excel](docs/screenshoots/Hasil_export_excel.png)
