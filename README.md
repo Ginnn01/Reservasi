@@ -138,7 +138,19 @@ Bagian ini akan diperbarui begitu kedua fitur selesai dibangun.
 ![Kelola reservasi](docs/screenshoots/reservasi2.png)
 
 ### 5. REST API (Postman)
-*(belum tersedia — tempel screenshot request & response Postman setelah fitur dibangun)*
+
+**Login — mendapatkan token akses**
+![Login API](docs/screenshoots/login-api.png)
+
+**GET /api/menus — data publik tanpa perlu autentikasi**
+![Menus API](docs/screenshoots/menu-api.png)
+
+**GET /api/reservations — dengan Bearer Token (berhasil)**
+![Reservations dengan token](docs/screenshoots/reservasi+token.png)
+
+**GET /api/reservations — tanpa token (ditolak, 401 Unauthenticated)**
+![Reservations tanpa token](docs/screenshoots/reservasi-token.png)
+
 
 ### 6. Pemisahan Hak Akses Admin dan User
 **Admin bisa mengakses dan mengontrol reservasi nya**
