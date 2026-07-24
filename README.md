@@ -180,4 +180,9 @@ Bagian ini akan diperbarui begitu kedua fitur selesai dibangun.
 ![Halaman mobile](docs/screenshoots/reservasimobile.png)
 
 ### 8. Hasil Export PDF/Excel
-*(belum tersedia — tempel screenshot hasil export setelah fitur dibangun)*
+
+**Tombol export di halaman Kelola Reservasi**
+![Tombol Export](docs/screenshoots/export_excel.png)
+
+**Hasil export Excel (.xlsx)**
+![Hasil Export Excel](docs/screenshoots/hasil_export_excel.png)

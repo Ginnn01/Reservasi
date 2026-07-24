@@ -84,6 +84,24 @@
             flex: 1;
             min-width: 130px;
         }
+
+        .export-btn {
+            font-family: 'Work Sans', sans-serif;
+            font-size: 13px;
+            font-weight: 600;
+            padding: 8px 16px;
+            border-radius: 8px;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            text-decoration: none;
+            border: 1px solid transparent;
+            transition: opacity .12s ease;
+            white-space: nowrap;
+        }
+        .export-btn:hover { opacity: 0.85; }
+        .export-pdf { background: #F6E3E1; color: #8C332B; border-color: #E8C3BE; }
+        .export-excel { background: #E8F0E4; color: #45592F; border-color: #C9DBC0; }
     </style>
 
     <div class="py-8" style="background-color: #FBF8F3; min-height: calc(100vh - 65px);">
@@ -127,25 +145,42 @@
                 </div>
             </div>
 
-            <form method="GET" class="flex flex-wrap gap-3 items-end">
-                <div>
-                    <label class="block bistro-font-mono text-[11px] tracking-widest uppercase mb-1" style="color:#8A7B6C;">Status</label>
-                    <select name="status" class="bistro-select" onchange="this.form.submit()">
-                        <option value="">Semua</option>
-                        <option value="pending" {{ request('status') === 'pending' ? 'selected' : '' }}>Pending</option>
-                        <option value="confirmed" {{ request('status') === 'confirmed' ? 'selected' : '' }}>Confirmed</option>
-                        <option value="cancelled" {{ request('status') === 'cancelled' ? 'selected' : '' }}>Cancelled</option>
-                        <option value="completed" {{ request('status') === 'completed' ? 'selected' : '' }}>Completed</option>
-                    </select>
+            <div class="flex flex-wrap items-end justify-between gap-3">
+                <form method="GET" class="flex flex-wrap gap-3 items-end">
+                    <div>
+                        <label class="block bistro-font-mono text-[11px] tracking-widest uppercase mb-1" style="color:#8A7B6C;">Status</label>
+                        <select name="status" class="bistro-select" onchange="this.form.submit()">
+                            <option value="">Semua</option>
+                            <option value="pending" {{ request('status') === 'pending' ? 'selected' : '' }}>Pending</option>
+                            <option value="confirmed" {{ request('status') === 'confirmed' ? 'selected' : '' }}>Confirmed</option>
+                            <option value="cancelled" {{ request('status') === 'cancelled' ? 'selected' : '' }}>Cancelled</option>
+                            <option value="completed" {{ request('status') === 'completed' ? 'selected' : '' }}>Completed</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block bistro-font-mono text-[11px] tracking-widest uppercase mb-1" style="color:#8A7B6C;">Tanggal</label>
+                        <input type="date" name="date" value="{{ request('date') }}" class="bistro-input" onchange="this.form.submit()">
+                    </div>
+                    @if (request('status') || request('date'))
+                        <a href="{{ route('admin.reservations.index') }}" class="bistro-font-body text-sm hover:underline" style="color:#8A7B6C;">Reset filter</a>
+                    @endif
+                </form>
+
+                <div class="flex gap-2">
+                    <a href="{{ route('admin.reports.export-pdf', request()->query()) }}" class="export-btn export-pdf">
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 15V3m0 12l-4-4m4 4l4-4M2 17l.621 2.485A2 2 0 0 0 4.561 21h14.878a2 2 0 0 0 1.94-1.515L22 17"/>
+                        </svg>
+                        Export PDF
+                    </a>
+                    <a href="{{ route('admin.reports.export-excel', request()->query()) }}" class="export-btn export-excel">
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 15V3m0 12l-4-4m4 4l4-4M2 17l.621 2.485A2 2 0 0 0 4.561 21h14.878a2 2 0 0 0 1.94-1.515L22 17"/>
+                        </svg>
+                        Export Excel
+                    </a>
                 </div>
-                <div>
-                    <label class="block bistro-font-mono text-[11px] tracking-widest uppercase mb-1" style="color:#8A7B6C;">Tanggal</label>
-                    <input type="date" name="date" value="{{ request('date') }}" class="bistro-input" onchange="this.form.submit()">
-                </div>
-                @if (request('status') || request('date'))
-                    <a href="{{ route('admin.reservations.index') }}" class="bistro-font-body text-sm hover:underline" style="color:#8A7B6C;">Reset filter</a>
-                @endif
-            </form>
+            </div>
 
             <div class="bistro-ticket shadow-sm">
                 <div class="bistro-ticket-top"></div>

@@ -70,16 +70,8 @@
         </div>
 
         <div class="flex items-center gap-3">
-            @if (Route::has('login'))
-                @auth
-                    <a href="{{ url('/dashboard') }}" class="btn-primary text-sm">Ke Dashboard</a>
-                @else
-                    <a href="{{ route('login') }}" class="text-sm font-semibold" style="color:#2B211D;">Masuk</a>
-                    @if (Route::has('register'))
-                        <a href="{{ route('register') }}" class="btn-primary text-sm">Daftar</a>
-                    @endif
-                @endauth
-            @endif
+            <a href="{{ route('login') }}" class="text-sm font-semibold" style="color:#2B211D;">Masuk</a>
+            <a href="{{ route('register') }}" class="btn-primary text-sm">Daftar</a>
         </div>
     </nav>
 
@@ -93,22 +85,13 @@
                 Pilih tanggal, jam, dan jumlah tamu — kami siapkan mejanya. Konfirmasi cepat, tanpa ribet telepon ke restoran.
             </p>
             <div class="flex flex-wrap items-center justify-center gap-4">
-                @auth
-                    <a href="{{ route('reservations.create') }}" class="btn-primary">
-                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M12 5v14M5 12h14"/>
-                        </svg>
-                        Buat Reservasi
-                    </a>
-                @else
-                    <a href="{{ route('register') }}" class="btn-primary">
-                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M12 5v14M5 12h14"/>
-                        </svg>
-                        Mulai Reservasi
-                    </a>
-                    <a href="{{ route('login') }}" class="btn-secondary">Saya sudah punya akun</a>
-                @endauth
+                <a href="{{ route('register') }}" class="btn-primary">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M12 5v14M5 12h14"/>
+                    </svg>
+                    Mulai Reservasi
+                </a>
+                <a href="{{ route('login') }}" class="btn-secondary">Saya sudah punya akun</a>
             </div>
         </div>
     </section>
